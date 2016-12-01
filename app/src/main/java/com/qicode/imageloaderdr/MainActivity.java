@@ -19,27 +19,27 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView mRcv;
     List<String> mUrls = new ArrayList<>();
     String[] mUrlArr = {
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
-//            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
+            "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
             "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG",
             "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/000bb9836ea21a9e5989d59387477e83.JPG",
             "http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG"
@@ -62,17 +62,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mImageLoader = ImageLoader.getInstance(5, ImageLoader.Type.FIFO);
+        mImageLoader = ImageLoader.getInstance(this);
 
         for(int i = 0; i < mUrlArr.length; i++){
             mUrls.add(mUrlArr[i]);
         }
         mRcv = (RecyclerView) findViewById(R.id.rcv);
-        mRcv.setLayoutManager(new GridLayoutManager(this, 4));
+        mRcv.setLayoutManager(new GridLayoutManager(this, 1));
         mRcv.setAdapter(mAdapter);
-
-//        ImageView img = (ImageView) findViewById(R.id.img);
-//        mImageLoader.loadImage("http://art-sign-pro.oss-cn-beijing.aliyuncs.com/image/expert_sign/003b5b828e24f3e01dd832c725fc6da0.JPG", img, true);
 
     }
 }
