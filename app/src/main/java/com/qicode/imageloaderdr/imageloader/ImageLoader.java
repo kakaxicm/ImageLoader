@@ -247,7 +247,7 @@ public class ImageLoader {
                         //本地缓存处理
                         //disklrucache读缓存
                         try {
-                            bp = getBitmapFromeDisk(path);
+                            bp = getBitmapFromDisk(path);
                             if (bp == null) {
                                 //下载图片
                                 bp = ImageDownloader.downloadImgFromUrl(path, imageView);
@@ -324,7 +324,7 @@ public class ImageLoader {
      * @return
      * @throws IOException
      */
-    private Bitmap getBitmapFromeDisk(String path) throws IOException {
+    private Bitmap getBitmapFromDisk(String path) throws IOException {
         Bitmap bp = null;
         String key = StringUtils.toMD5(path);
         DiskLruCache.Snapshot snapshot = mDiskLruCache.get(key);
