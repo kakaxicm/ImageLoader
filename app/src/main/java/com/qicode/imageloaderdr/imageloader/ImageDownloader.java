@@ -62,7 +62,7 @@ public class ImageDownloader {
     }
 
     /**
-     * 无硬盘缓存,下载图片到内存
+     * 下载图片到硬盘
      * @param urlStr
      * @param imageView
      * @return
