@@ -47,7 +47,7 @@ public class ImageLoader {
     private ExecutorService mThreadPool;
 
     /**
-     * 后台轮询线程及Handler,信号量
+     * 后台轮询线程及Handler
      */
     private HandlerThread mBackLoopThread;//后台线程
 
@@ -59,15 +59,15 @@ public class ImageLoader {
 
         @Override
         public void handleMessage(Message msg) {
-            //以下代码运行在子线程,采用信号量来调度任务
-            //任务入队
-            mThreadPool.execute(getTask());
+
             //同时间的下载任务个数信号量同步,执行任务到达上限,则阻塞
             try {
                 mBackLoopThreadSemaphore.acquire();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+            mThreadPool.execute(getTask());
         }
     }
 
